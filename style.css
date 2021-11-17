@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 150vh;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+i {
+    font-size: 40px;
+    color: blueviolet;
+    position: fixed;
+    right: 20px;
+    bottom: 35px;
+    z-index: 1;
+    transition: .3s linear;
+}
+
+/* icon after click */
+i.on {
+    transform: rotate(180deg);
+    color: darkblue;
+    bottom: 240px;
+}
+
+
+nav {
+    height: 300px;
+    width: 100vw;
+    background-color: plum;
+    position: fixed;
+    bottom: -270px;
+    transition: .3s linear;
+}
+
+/* nav after click */
+nav.on {
+    bottom: 0;
+    background-color: cornflowerblue;
+
+}
